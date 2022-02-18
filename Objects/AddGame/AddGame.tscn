@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Objects/AddGame/AddGame.gd" type="Script" id=1]
+
+[node name="AddGame" type="LineEdit"]
+margin_right = 1024.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+align = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="focus_entered" from="." to="." method="_on_AddGame_focus_entered"]
+[connection signal="focus_exited" from="." to="." method="_on_AddGame_focus_exited"]
+[connection signal="text_entered" from="." to="." method="_on_AddGame_text_entered"]
